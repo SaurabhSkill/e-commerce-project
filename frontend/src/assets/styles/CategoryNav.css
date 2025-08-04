@@ -1,0 +1,42 @@
+.category-nav-container {
+    padding-top: 70px; 
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 0.5rem;
+  }
+  
+  .category-nav {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+  }
+  
+  .category-nav::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .category-link {
+    color: #343a40 !important;
+    padding: 0.5rem 1rem !important;
+    text-align: center;
+    flex-shrink: 0; 
+  }
+  
+  .category-link:hover {
+    color: #007bff !important;
+    background-color: #e9ecef;
+    border-radius: 8px;
+  }
+  
+  .category-icon {
+    font-size: 1.5rem; 
+    margin-bottom: 0.25rem;
+  }
+  
+  .category-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  

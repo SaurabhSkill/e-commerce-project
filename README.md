@@ -1,8 +1,9 @@
-🛍️ MERN eCommerce Platform
+🛍️ MERN eCommerce Platform <hr>
+
 Welcome to my full-stack eCommerce project, built from the ground up using the MERN (MongoDB, Express.js, React, Node.js) stack. This application provides a complete online shopping experience, from product browsing to secure checkout.
 
-✨ Key Features
-👤 User Features
+✨ Key Features<br>
+👤 User Features<br>
 🛒 Full Shopping Cart: Add, remove, and manage products in the cart.
 
 ⭐ Product Reviews & Ratings: Users can leave reviews and ratings for products.
@@ -18,6 +19,7 @@ Welcome to my full-stack eCommerce project, built from the ground up using the M
 💳 Payment Integration: Secure payment processing via Razorpay.
 
 🔑 OTP-Based Security: Secure user registration and password reset using OTP email verification.
+<hr>
 
 👑 Admin Features
 📊 Admin Dashboard: A central hub for managing the entire platform.
@@ -34,6 +36,7 @@ Backend: Node.js, Express.js, MongoDB (with Mongoose)
 Frontend: React, Redux Toolkit, React Bootstrap
 
 Authentication: JSON Web Tokens (JWT), OTP Verification
+<hr>
 
 Deployment: Render
 

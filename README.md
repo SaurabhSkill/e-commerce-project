@@ -86,9 +86,10 @@ npm run data:import
 # Destroy all data
 npm run data:destroy
 
-📛 Contact & Connect
+📛 Contact & Connect<br>
+
 Developer: Saurabh Gupta
 
 GitHub: github.com/SaurabhSkill
 
-LinkedIn: linkedin.com/in/saurabh-gupta-0902642a4
+LinkedIn: [linkedin.com/in/saurabh-gupta-0902642a4](http://linkedin.com/in/saurabh-gupta-0902642a4)

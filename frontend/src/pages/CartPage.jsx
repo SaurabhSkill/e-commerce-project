@@ -12,7 +12,6 @@ import {
   Button,
   ListGroupItem
 } from 'react-bootstrap';
-import { FaIndianRupeeSign } from 'react-icons/fa6';
 
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../slices/cartSlice';

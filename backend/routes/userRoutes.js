@@ -11,6 +11,7 @@ import {
   getUserById,
   verifyOtp,
   forgotPasswordRequest,
+  resetPassword,
 } from '../controllers/userController.js';
 import { protect, admin } from '../middleware/authMiddleware.js';
 

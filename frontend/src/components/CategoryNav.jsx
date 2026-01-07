@@ -2,7 +2,6 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Nav, Container } from 'react-bootstrap';
 import { 
-  FaCoffee, 
   FaHome, 
   FaPuzzlePiece, 
   FaLeaf, 

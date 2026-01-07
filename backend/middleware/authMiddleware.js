@@ -46,31 +46,4 @@ const admin = (req, res, next) => {
   }
 };
 
-// NEW MIDDLEWARE: Allow unverified users for specific routes (like getting profile to show verification status)
-const allowUnverified = async (req, res, next) => {
-  try {
-    const token = req.cookies.jwt;
-
-    if (!token) {
-      res.statusCode = 401;
-      throw new Error('Authentication failed: Token not provided.');
-    }
-
-    const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
-
-    if (!decodedToken) {
-      res.statusCode = 401;
-      throw new Error('Authentication failed: Invalid token.');
-    }
-
-    req.user = await User.findById(decodedToken.userId).select('-password');
-
-    next();
-  } catch (error) {
-    next(error);
-  }
-};
-
-
-
-export { protect, admin, allowUnverified };
+export { protect, admin };

@@ -183,11 +183,6 @@ const updateUser = async (req, res) => {
     }
 };
 
-const admins = async (req, res) => {
-    const adminUsers = await User.find({ isAdmin: true });
-    res.json(adminUsers);
-};
-
 const resetPassword = async (req, res) => {
   try {
     const { email, otp, password } = req.body;
@@ -219,7 +214,6 @@ export {
   deleteUser,
   getUserById,
   updateUser,
-  admins,
   forgotPasswordRequest,
   resetPassword,
   verifyOtp,

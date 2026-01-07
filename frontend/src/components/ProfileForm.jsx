@@ -15,8 +15,6 @@ const ProfileForm = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setConfirmShowPassword] = useState(false);
 
-  const { userInfo } = useSelector(state => state.auth);
-
   const [updateProfile, { isLoading: isUpdateProfileLoading }] =
     useProfileMutation();
 

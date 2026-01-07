@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Form, Button, Row, Col, InputGroup, Alert } from 'react-bootstrap';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useRegisterMutation } from '../slices/usersApiSlice';
-import { setCredentials } from '../slices/authSlice';
 import { toast } from 'react-toastify';
 import { FaEye, FaEyeSlash, FaEnvelope } from 'react-icons/fa';
 import FormContainer from '../components/FormContainer';
@@ -21,7 +20,6 @@ const RegisterPage = () => {
   const [emailSent, setEmailSent] = useState(false);
   const [userEmail, setUserEmail] = useState('');
 
-  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [register, { isLoading }] = useRegisterMutation();
@@ -115,7 +113,6 @@ const RegisterPage = () => {
       <Meta title={'Register'} />
       <h1>Register</h1>
       {isLoading && <Loader />} 
-      <Form onSubmit={submitHandler}></Form>
       <Form onSubmit={submitHandler}>
         <Form.Group className='mb-3' controlId='name'>
           <Form.Label>Name</Form.Label>

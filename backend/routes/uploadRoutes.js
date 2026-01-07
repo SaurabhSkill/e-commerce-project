@@ -31,7 +31,7 @@ const upload = multer({ storage, fileFilter }).single('image');
 
 router.post('/', upload, (req, res) => {
   if (!req.file)
-    throw res.status(400).json({error: 'No file uploaded'});
+    return res.status(400).json({error: 'No file uploaded'});
 
   res.send({
     message: 'Image uploaded',

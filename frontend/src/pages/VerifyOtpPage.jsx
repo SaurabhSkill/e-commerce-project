@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import { useVerifyOtpMutation } from '../slices/usersApiSlice';

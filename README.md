@@ -85,7 +85,7 @@ npm run data:import
 
 # Destroy all data
 npm run data:destroy
-
+<a href="https://deepwiki.com/SaurabhSkill/e-commerce-project"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 📛 Contact & Connect<br>
 
 Developer: Saurabh Gupta
